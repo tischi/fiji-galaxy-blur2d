@@ -1,1 +1,1 @@
-# fiji-galaxy-blur2d
+# fiji-plugin
