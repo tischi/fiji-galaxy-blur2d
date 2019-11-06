@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tool id="fijiBlur2d" name="Blur2d" version="1.52o">
+  <description>FijiBlur2d</description>
+  <inputs>
+    <param name="inputImageFile" type="data" />
+    <param name="radius" type="text" />
+  </inputs>
+  <outputs>
+    <data name="tiff" format="tiff">
+      <discover_datasets pattern="__designation_and_ext__" directory="output" visible="true" />
+    </data>
+  </outputs>
+  <stdio>
+    <exit_code range="1:" level="fatal" description="Error" />
+  </stdio>
+  <tests />
+  <help>aaaa</help>
+  <command><![CDATA[mkdir working_dir &&mkdir output &&ln -s $inputImageFile working_dir/$inputImageFile.element_identifier && ImageJ --ij2 --headless --run "Blur2d" "inputImageFile='working_dir/$inputImageFile.element_identifier',radius='$radius'"&& mv working_dir/blur2d.tif output]]></command>
+</tool>

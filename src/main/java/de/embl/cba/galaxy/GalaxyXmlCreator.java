@@ -193,7 +193,9 @@ public class GalaxyXmlCreator
 		//		command.run();
 
 		GalaxyXmlCreator gxc = new GalaxyXmlCreator( command, command.getHelp() );
-		gxc.buildXML(gxc.info);
-		
+		final Document document = gxc.buildXML( gxc.info );
+
+		XmlUtilities.print( document );
 	}
+
 }
