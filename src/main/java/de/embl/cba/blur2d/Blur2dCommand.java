@@ -15,11 +15,7 @@ import java.io.File;
 
 @Plugin(type = Command.class, headless = true, menuPath = "Blur2d")
 public class Blur2dCommand implements Command {
-	
-//	@Parameter
-//	public LogService logService;
 
-	// TODO: can this also be an Img
 	@Parameter( label = "Input image" )
 	public File inputImageFile = new File( "/Users/tischer/Documents/fiji-galaxy-blur2d/src/test/resources/image2d.tif" );;
 

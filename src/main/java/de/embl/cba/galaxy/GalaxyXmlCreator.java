@@ -34,7 +34,6 @@ public class GalaxyXmlCreator
 			System.out.println( output.getName() );
 			System.out.println( output.getType() );
 		}
-
 		// do s.th. with the help
 	}
 
