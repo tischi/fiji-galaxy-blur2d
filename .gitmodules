@@ -1,0 +1,3 @@
+[submodule "fiji-blur2d-ansible"]
+	path = fiji-blur2d-ansible
+	url = https://github.com/sunyi000/fiji-blur2d-ansible
